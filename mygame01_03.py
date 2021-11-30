@@ -17,6 +17,7 @@ def main():
     input("Press Enter to continue\n")            
 
     ## Create the JSON string
+    # convert the string to Python
     datacenterdecoded = json.loads(datacenterstring)
 
     ## This is now a dictionary
