@@ -2,15 +2,22 @@
 """Learning or Reviewing about Lists | by Alta3 Research"""
 
 def main():
-    ## create an empty list
-    myemptylist = []
+    ## create a list already containing IP addresses (strings)
+    iplist = ['10.0.0.1', '10.0.1.1', '10.3.2.1']
 
-    ## add to our list with a list method
-    ## The extend method will add every item to the list
-    myemptylist.extend('192.168.102.55')
+    ## create a list of ports (strings)
+    iplist2 = ['5060', '80', '22']
 
-    ## display our list
-    print(myemptylist)
+    ## display list
+    #print(iplist)
+    print(f"printing iplist:                    {iplist}")
+    ## Use the extend method on iplist, our list object
+    ## Extend iterates over each 'thing' it is passed, and adds them to a list object
+    iplist.extend(iplist2)
+
+    ## show how iplist has changed
+    #print(iplist)
+    print(f"printing iplist.extend(iplist2):    {iplist}")
 
 if __name__ == "__main__":
     main()
