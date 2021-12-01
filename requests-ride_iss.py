@@ -23,7 +23,6 @@ def main():
     ## translate the json into python lists and dictionaries
     helmetson = groundctrl.json()
 
-
     ## display our Pythonic data
     print("\n\nConverted Python data")
     print(helmetson)
