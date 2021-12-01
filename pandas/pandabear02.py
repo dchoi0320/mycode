@@ -12,9 +12,9 @@ def main():
     # display first 5 entries of the ciscojson dataframe            
     print(ciscojson.head())
     
-    ciscodf = pd.concat([ciscocsv, ciscojson])
+    #ciscodf = pd.concat([ciscocsv, ciscojson])
     # uncomment the line below to "fix" the index issue
-    # ciscodf = pd.concat([ciscocsv, ciscojson], ignore_index=True, sort=False)
+    ciscodf = pd.concat([ciscocsv, ciscojson], ignore_index=True, sort=False)
     
     print(ciscodf)
     

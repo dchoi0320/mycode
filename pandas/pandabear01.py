@@ -48,9 +48,11 @@ def main():
     print(sorted_by_gross.head(10))
 
     # create a stacked bar graph
+    #sorted_by_gross.drop_duplicates(inplace=True)
     sorted_by_gross['Gross Earnings'].head(10).plot(kind="barh")
     # save the figure as stackedbar.png
-    plt.savefig("stackedbar.png")
-
+    #plt.savefig("stackedbar.png")
+    # to fix screen cut-off use bbox_inches
+    plt.savefig("stackedbar.png", bbox_inches='tight')
 if __name__ == "__main__":
     main()
