@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/hello/<name>")
 def hello_name(name):
-    return f"Hello {name}"
+    return f"Hello {name}\n"
     ## V2 STYLE STRING FORMATTER - return "Hello {}".format(name)
     ## OLD STYLE STRING FORMATTER - return "Hello %s!" % name
 

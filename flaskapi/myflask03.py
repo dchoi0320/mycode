@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/admin")
 def hello_admin():
-    return "Hello Admin"
+    return "Hello Admin\n"
 
 @app.route("/guest/<guesty>")
 def hello_guest(guesty):
-    return f"Hello {guesty} Guest"
+    return f"Hello {guesty} Guest\n"
     #V2 FORMATTER - return "Hello {} Guest".format(guesty)
     #OLD FORMATTER - return "Hello %s as Guest" % guesty
 

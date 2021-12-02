@@ -30,13 +30,15 @@ def login():
         if request.form.get("nm"): # if nm was assigned via the POST
             user = request.form.get("nm") # grab the value of nm from the POST
         else: # if a user sent a post without nm then assign value defaultuser
-            user = "defaultuser"
+            #user = "defaultuser"
+            user = "default_TEST_user"
     # GET would likely come from a user interacting with a browser
     elif request.method == "GET":
         if request.args.get("nm"): # if nm was assigned as a parameter=value
             user = request.args.get("nm") # pull nm from localhost:5060/login?nm=larry
         else: # if nm was not passed...
-            user = "defaultuser" # ...then user is just defaultuser
+            #user = "defaultuser" # ...then user is just defaultuser
+            user = "default_DEV_user"
     return redirect(url_for("success", name = user)) # pass back to /success with val for name
 if __name__ == "__main__":
    app.run(host="0.0.0.0", port=2224) # runs the application
