@@ -2,11 +2,9 @@
 ## Try a real world test with getpass
 
 ## import Paramiko so we can talk SSH
-#import paramiko # allows Python to ssh
+import paramiko # allows Python to ssh
 import os # low level operating system commands
 import getpass # we need this to accept passwords
-
-import paramiko # allows Python to ssh
 
 def main():
     ## where to connect to
