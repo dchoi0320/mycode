@@ -8,5 +8,5 @@ WORKING_PATH="/home/dchoi/trainings/Python_API/mycode"
 cd ${WORKING_PATH}
 git add *
 #git commit -m "serving cookies"
-git commit -m ${COMMENT}
+git commit -m "${COMMENT}"
 git push origin main
