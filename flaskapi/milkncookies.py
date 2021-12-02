@@ -25,7 +25,7 @@ def setcookie():
         #if request.form["nm"] <-- this also works, but returns ERROR if no nm
             user = request.form.get("nm") # grab the value of nm from the POST
         else: # if a user sent a post without nm then assign value defaultuser
-            user = "defaultuser"
+            user = "default_TEST_user"
 
         # Note that cookies are set on response objects.
         # Since you normally just return strings
