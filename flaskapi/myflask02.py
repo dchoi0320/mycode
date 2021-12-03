@@ -9,6 +9,6 @@ def hello_name(name):
     ## OLD STYLE STRING FORMATTER - return "Hello %s!" % name
 
 if __name__ == "__main__":
-   app.run(host="0.0.0.0", port=2224) # runs the application
+   app.run(host="0.0.0.0", port=2224, debug=True) # runs the application
 
 # curl http://192.168.98.132:2224/hello/TEST

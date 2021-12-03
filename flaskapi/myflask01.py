@@ -10,11 +10,11 @@ app = Flask(__name__)
 # decorator, tells the application which URL
 # should call the associated function
 #@app.route("/")
-@app.route("/")
+@app.route("/hello")
 #@app.route("/slappy")
 def hello_world():
    return "Hello World\n"
 
 if __name__ == "__main__":
-   app.run(host="0.0.0.0", port=2224) # runs the application
-   #app.run(host="0.0.0.0", port=2224, debug=True) # DEBUG MODE
+   #app.run(host="0.0.0.0", port=2224) # runs the application
+   app.run(host="0.0.0.0", port=2224, debug=True) # DEBUG MODE
